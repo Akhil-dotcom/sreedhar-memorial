@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        readex: "'Readex Pro', sans-serif"
+      }
+    },
   },
   plugins: [],
 }
