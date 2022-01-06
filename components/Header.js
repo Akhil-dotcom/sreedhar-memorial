@@ -1,9 +1,10 @@
-import { BiMenu, BiHomeAlt } from 'react-icons/bi'
+import { BiMenu } from 'react-icons/bi'
 import Drawer from '@mui/material/Drawer' 
 import { useState } from 'react'
 import { FaHeartbeat } from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import DrawerNav from './DrawerNav'
 
 function Header() {
     const [drawerState, setdrawerState] = useState(false)
@@ -27,20 +28,7 @@ function Header() {
                 <BiMenu size={25} className="cursor-pointer" onClick={() => setdrawerState(!drawerState)} />
             </div>
             <Drawer open={drawerState} anchor="right" onClose={() => setdrawerState(false)}>
-                <div className="p-5 font-readex flex flex-col space-y-4">
-                    <div className="flex items-center space-x-2 bg-blue-500">
-                        <BiHomeAlt size={25} />
-                        <div>Home</div>
-                    </div>
-                    <div className="flex items-center space-x-2 bg-blue-500">
-                        <BiHomeAlt size={25} />
-                        <div>Podiatry</div>
-                    </div>
-                    <div className="flex items-center space-x-2 bg-blue-500">
-                        <BiHomeAlt size={25} />
-                        <div>Appointment</div>
-                    </div>
-                </div>
+                <DrawerNav />
             </Drawer>
         </header>
         </div>
