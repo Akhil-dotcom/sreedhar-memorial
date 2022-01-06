@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
-import MainHome from './MainHome'
+import Services from '../components/Services'
+import MainHome from '../components/MainHome'
+import Doctors from '../components/Doctors'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <Header />
         {/* main */}
         <MainHome />
+        <Services />
+        <Doctors />
       </div>
     </div>
   )
