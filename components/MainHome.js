@@ -3,14 +3,14 @@ import { MdContentCopy } from 'react-icons/md'
 function MainHome() {
     return (
         <div className="max-w-screen-xl text-gray-800 mx-auto pt-20 p-5 xl:px-0">
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row gap-5">
                 <div className="flex-1 max-w-lg mx-auto">
                     <div className="text-center lg:text-left pb-3">Sreedhar Memorial Hospital</div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl text-center lg:text-left font-semibold">Best outcomes <br className="hidden lg:inline-block" />for Every patient Every <span className="text-green-500">t</span>ime.</h1>
                     <h3 className="pt-4 text-gray-500 text-center lg:text-left lg:max-w-lg">MUI provides a robust, customizable, and accessible library of foundational and advanced components, enabling you to build your own design system and develop React applications faster.</h3>
                     <div className="pt-10 flex flex-col justify-center lg:justify-start sm:flex-row gap-5">
-                        <button className="bg-green-500 border-2 border-green-500 p-4 rounded-md text-white transform hover:scale-105 duration-100 active:scale-90">Get Appointment</button>
-                        <button className="bg-gray-100 p-4 rounded-md border-2 flex justify-center border-gray-300 items-center">sreedharmemeorial@gmail.com <MdContentCopy size={20} className="text-gray-700 ml-2" /></button>
+                        <button className="bg-green-500 border-2 text-sm whitespace-nowrap border-green-500 p-4 rounded-md text-white transform hover:scale-105 duration-100 active:scale-90">Get Appointment</button>
+                        <button className="bg-gray-100 p-4 rounded-md border-2 flex text-sm justify-center border-gray-300 items-center">sreedharmemeorial@gmail.com <MdContentCopy size={20} className="text-gray-700 ml-2" /></button>
                     </div>
                 </div>
                 <div className="flex-1 flex relative justify-center gap-3 sm:gap-5">

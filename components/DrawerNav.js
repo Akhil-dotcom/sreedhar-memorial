@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { BiHomeAlt } from 'react-icons/bi'
+
 function DrawerNav() {
     const router = useRouter()
     return (
